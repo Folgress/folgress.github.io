@@ -1,0 +1,20 @@
+{
+    "folders": [
+        {
+            "path": "."
+        },
+        {
+            "name": "Gulpfile",
+            "path": "gulpfile.ts"
+        },
+        {
+            "name": "Main Page",
+            "path": "src/Main"
+        },
+        {
+            "name": "SlimeIM Helper",
+            "path": "src/SlimeIM-Helper"
+        }
+    ],
+    "settings": {}
+}
