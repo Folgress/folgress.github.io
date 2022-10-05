@@ -1,0 +1,27 @@
+{
+  "name": "gitpages",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Folgress/folgress.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Folgress/folgress.github.io/issues"
+  },
+  "homepage": "https://github.com/Folgress/folgress.github.io#readme",
+  "devDependencies": {
+    "@types/gulp": "^4.0.9",
+    "@types/gulp-gh-pages": "^0.0.33",
+    "gulp": "^4.0.2",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-pug": "^5.0.0",
+    "ts-node": "^10.9.1"
+  }
+}
