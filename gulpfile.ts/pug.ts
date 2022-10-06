@@ -1,10 +1,13 @@
 import GulpClient from 'gulp';
 import Pug from 'gulp-pug';
-import { devPathC } from './index';
+import { DEBUG_MODE, devPathC } from './index';
 
 export function compilePUG(pathes: devPathC) {
-    console.log(pathes.src + '**/*.pug');
-    return GulpClient.src(pathes.src + '**/*.pug')
+    pathes.src += '**/*.pug';
+
+    if (DEBUG_MODE) console.log(`[COMPILE][PUG] Path: "${pathes.src}"`);
+
+    return GulpClient.src(pathes.src, { sourcemaps: true })
         .pipe(Pug({ verbose: true }))
         .pipe(GulpClient.dest(pathes.dist));
 }
