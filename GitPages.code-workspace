@@ -16,5 +16,7 @@
             "path": "src/SlimeIM-Helper"
         }
     ],
-    "settings": {}
+    "settings": {
+        "typescript.preferences.importModuleSpecifierEnding": "index"
+    }
 }
