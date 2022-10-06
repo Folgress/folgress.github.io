@@ -2,6 +2,8 @@ import GulpClient from 'gulp';
 import ghPages from 'gulp-gh-pages';
 import { compile_SlimeIM_Helper } from './compile';
 
+export const DEBUG_MODE = true;
+
 export type devPathC = {
     src: string;
     dist: string;
