@@ -26,4 +26,5 @@ export const Paths: devPath = {
 
 export const Deploy = () => GulpClient.src('dist/**/*').pipe(ghPages({ branch: 'live' }));
 
-export default GulpClient.series(compile_SlimeIM_Helper);
+export const Compile_SlimeIM_Helper = GulpClient.series(compile_SlimeIM_Helper);
+export const Compile_Deploy_SlimeIM_Helper = GulpClient.series(compile_SlimeIM_Helper, Deploy);
